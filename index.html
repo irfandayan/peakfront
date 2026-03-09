@@ -719,7 +719,32 @@
       font-weight: 300;
       line-height: 1.7;
       color: rgba(255,255,255,0.35);
-      max-width: 240px;
+      max-width: 260px;
+    }
+    .footer-contact {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.5;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-contact-item:hover { color: rgba(255,255,255,0.75); }
+    .footer-contact-item svg {
+      width: 14px; height: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: var(--accent);
+      opacity: 0.8;
     }
     .footer-col h4 {
       font-family: 'Outfit', sans-serif;
@@ -1142,6 +1167,20 @@
       <div class="footer-brand">
         <a href="#" class="nav-logo">Peak<span>front</span></a>
         <p>AI-powered business tools built for the modern era. Simple, fast, and endlessly scalable.</p>
+        <div class="footer-contact">
+          <a href="https://maps.google.com/?q=Villa+348+Shakbout+City+Abu+Dhabi+UAE" target="_blank" class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            Villa #348, Main, Near Al Watan Charter School, Shakbout City, Abu Dhabi, UAE
+          </a>
+          <a href="tel:+9717459432" class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.58 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.76a16 16 0 0 0 6.29 6.29l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
+            </svg>
+            +971 7459432
+          </a>
+        </div>
       </div>
       <div class="footer-col">
         <h4>Product</h4>
